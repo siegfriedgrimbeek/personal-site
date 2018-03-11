@@ -43,9 +43,9 @@ export default {
   name: 'App',
   methods: {
     navigate () {
-      if(this.$router.currentRoute.name === 'Index'){
+      if (this.$router.currentRoute.name === 'Index') {
         this.$router.push({name: 'About'})
-      }else{
+      } else {
         this.$router.push({name: 'Index'})
       }
     }

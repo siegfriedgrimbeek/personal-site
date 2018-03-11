@@ -9,7 +9,7 @@
 
       <p>Therefore, I decided to dive in head first and start developing both this site and another side project that I am working on in VUE.</p>
 
-      <p>All the code for this site is available publicly on my GitHub and my goal with this project is to add something cool to this site on a weekly basis.</p>
+      <p>All the code for this site is available publicly on my <a href="https://github.com/siegfriedgrimbeek/personal-site" target="_blank">GitHub</a> and my goal with this project is to add something cool to this site on a weekly basis.</p>
 
       <p>I have plenty of ideas and I have loads more to learn and through this site, I will be practicing my VUE skills and sharing my findings as I go.</p>
 
