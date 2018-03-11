@@ -75,6 +75,7 @@ body
     align-items: center
     justify-content: space-between
     background-color: #303133
+    z-index: 2
 
     >div
       padding: 2vw
@@ -137,7 +138,8 @@ body
     font-weight: 600
     letter-spacing: 2px
     text-transform: uppercase
+    z-index: 1
+
     .headline
       font-size: 10vw;
-
 </style>
