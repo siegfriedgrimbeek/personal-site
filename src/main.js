@@ -12,6 +12,7 @@ import 'vue-awesome/icons/instagram'
 import 'vue-awesome/icons/github'
 import 'vue-awesome/icons/medium'
 import 'vue-awesome/icons/wordpress'
+import 'vue-awesome/icons/close'
 
 import Icon from 'vue-awesome/components/Icon'
 

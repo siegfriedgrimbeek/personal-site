@@ -1,6 +1,6 @@
 <template>
   <main>
-    <router-link v-bind:to="{ name: 'Index' }" class="copy-container about-copy">
+    <div class="copy-container about-copy">
 
       <h3>About this site</h3>
       <p>This site has been developed using the VUE-CLI, it is basically my first introduction to VUE as I have not had the opportunity to work with VUE professionally.</p>
@@ -13,10 +13,9 @@
 
       <p>I have plenty of ideas and I have loads more to learn and through this site, I will be practicing my VUE skills and sharing my findings as I go.</p>
 
-      <p>Thanks for reading,
-      Siegfried</p>
+      <router-link v-bind:to="{ name: 'Index' }"><icon name="close"></icon> Close</router-link>
 
-    </router-link>
+    </div>
   </main>
 </template>
 
@@ -27,6 +26,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+whiteCol = #F2F6FC
 main
   @media screen and (max-width: 320px)
     padding: 60px 0
@@ -37,6 +37,31 @@ main
   color: white
   text-decoration: none
   letter-spacing: initial
+
+  a
+    color: whiteCol
+    text-decoration: none
+    position: relative
+    cursor: pointer
+    display: inline
+
+    &:after
+      transition: height 0.1s ease
+      background-color: whiteCol
+      width: 100%
+      height: 1px
+      position: absolute
+      content: ""
+      left: 0
+      bottom: 0
+      z-index: -1
+
+    &:hover
+      color: #303133
+      z-index: 1
+
+      &:after
+        height: 20px
 
   h3
     font-size: 4vw
