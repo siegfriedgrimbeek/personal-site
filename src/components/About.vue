@@ -3,9 +3,9 @@
     <div class="copy-container about-copy">
 
       <h3>About this site</h3>
-      <p>This site has been developed using the VUE-CLI, it is basically my first introduction to VUE as I have not had the opportunity to work with VUE professionally.</p>
+      <p>This site has been developed using the VUE-CLI, it is my first introduction to VUE as I have not had the opportunity to work with VUE professionally.</p>
 
-      <p>I did need to see what all the fuss regarding VUE was about as the Frontend community was raved about it and whenever I met someone new, they had positive feedback regarding VUE.</p>
+      <p>I had to see what all the fuss regarding VUE was about as the Frontend community raved about it, everyone has positive feedback regarding VUE.</p>
 
       <p>Therefore, I decided to dive in head first and start developing both this site and another side project that I am working on in VUE.</p>
 

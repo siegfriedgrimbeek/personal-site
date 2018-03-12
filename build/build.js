@@ -10,6 +10,8 @@ const chalk = require('chalk')
 const webpack = require('webpack')
 const config = require('../config')
 const webpackConfig = require('./webpack.prod.conf')
+const websiteDeploy = require('./deploy.js')
+const argv = require('yargs').argv
 
 const spinner = ora('building for production...')
 spinner.start()
@@ -37,5 +39,8 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
       '  Tip: built files are meant to be served over an HTTP server.\n' +
       '  Opening index.html over file:// won\'t work.\n'
     ))
+
+    // Deploy Website if arguments are provided
+    websiteDeploy(argv.deploy).launch()
   })
 })
