@@ -12,8 +12,8 @@
     "deploy": "node build/build.js --deploy=true"
   },
   "dependencies": {
+    "dotenv": "^5.0.1",
     "reset-css": "^2.2.1",
-    "try-require": "^1.2.1",
     "vue": "^2.5.2",
     "vue-awesome": "^2.3.5",
     "vue-router": "^3.0.1"
@@ -59,6 +59,7 @@
     "shelljs": "^0.7.6",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "twitter": "^1.7.1",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",

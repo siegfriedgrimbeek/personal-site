@@ -4,6 +4,7 @@ require('./check-versions')()
 const ora = require('ora')
 const chalk = require('chalk')
 const FtpDeploy = require('ftp-deploy')
+const tweetDeployment = require('./tweet.js')
 
 const websiteDeploy = (function(skipDeployment){
   const launchDeploy = function() {
@@ -24,6 +25,7 @@ const websiteDeploy = (function(skipDeployment){
         spinner.stop()
         if (err) console.log(err)
         else console.log(chalk.cyan('\n  Deployment complete.\n'))
+        tweetDeployment().launch()
     })
 
     ftpDeploy.on('uploading', function(data) {
@@ -41,6 +43,5 @@ const websiteDeploy = (function(skipDeployment){
   }
   return { launch : launchDeploy}
 })
-
 
 module.exports = websiteDeploy

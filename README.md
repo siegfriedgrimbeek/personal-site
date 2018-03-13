@@ -2,7 +2,7 @@
 
 > Siegfried Grimbeek Website
 
-[www.siegfriedgrimbeek.co.za](https://www.siegfriedgrimbeek.co.za/) 
+[www.siegfriedgrimbeek.co.za](https://www.siegfriedgrimbeek.co.za/)
 
 ## Build Setup
 
@@ -38,12 +38,19 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - ~~CI/CD Integration~~ Deploys to FTP
 - Deploy to Heroku
 - Possible converstion to MEVN App
-- Tweet on deployment?
+- ~~Tweet on deployment?~~
+- ~~Added examples~~
 - Adhere to logical release versioning
 - Create Wiki with release notes?
 - Auto readme.md update CI/CD to git?
 
 ## Release Notes
+### Release 1.1
+- Added Tweet on Deployment
+  - One needs to create an app on Twitter for this and integrate with the Twitter API
+  - Then the settings are stored in the private/config.js file.
+  - See attached example in examples/config.js
+- Add examples/config.js
 ### Release 1.1
 - Added integrated FTP deployment scripts
   - Need to add './private/config.js' file with the FTP settings as follows:
